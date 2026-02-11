@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Zaki ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS STYLES --- */
+        body {
+            background: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);
+            font-family: 'Quicksand', sans-serif;
+            color: #5a3e5a;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Dancing Script', cursive;
+            color: #d63384;
+        }
+
+        /* Floating Hearts Background */
+        .heart-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .heart-bg span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 192, 203, 0.7);
+            transform: rotate(45deg);
+            animation: float 15s infinite;
+        }
+        .heart-bg span::before, .heart-bg span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: 50%;
+        }
+        .heart-bg span::before { top: -50%; }
+        .heart-bg span::after { left: -50%; }
+        
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(45deg) scale(0.5); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(45deg) scale(1.2); opacity: 0; }
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        /* 1. Countdown */
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(214, 51, 132, 0.2);
+            animation: pulse 3s infinite;
+        }
+        #timer {
+            font-size: 1.5em;
+            font-weight:
